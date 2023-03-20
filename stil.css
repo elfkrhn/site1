@@ -1,0 +1,641 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.temizle{
+  clear: both;
+}
+body{
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+section nav a{
+  color: #ffff;
+  text-decoration: none;
+  padding: 2.7vh 0.8vw;
+  transition: 0.5s linear;
+}
+section nav a:hover{
+  color: #34ad54;
+  background-color: #ff9933;
+}
+.container{
+  display: flex;
+  height: 13vh;
+}
+header .tel{
+  font-weight: bold;
+  font-size: 1.375em;
+  text-align: left;
+  width: 25vw;
+  margin-right: 26vw;
+  margin-left: 2vw;
+}
+.tel p{
+  margin-top: 5vh;
+}
+header .tel img{
+  margin-top:4vh ;
+  float: left;
+}
+#Logo{
+  color: #ff9933;
+  font-size: 2.5em;
+  margin-top: 3vh;
+  transition: 1s linear;
+}
+#Logo:hover{
+  color: #34ad54;
+}
+#Logo span{
+  color: #34ad54;
+  transition: 1s linear;
+}
+#Logo span:hover{
+  color: #ff9933;
+}
+header .link{
+  display: flex;
+  margin-top: 4vh;
+  margin-left: 25vw;
+  margin-right: 2vw;
+}
+header .yuvarlak{
+  border:0;
+  background-color: #34ad54;
+  padding-left:0.6vw ;
+  margin-right: 0.7vw;
+  padding-top:1.1vh ;
+  border-radius: 50%;
+  height: 5vh;
+  width: 2.5vw;
+  float: right;
+  transition: 0.5s linear;
+}
+header .yuvarlak img{
+  width: 1.4vw;
+  height: 2.5vh;
+}
+.yuvarlak:hover{
+  background-color: #ff9933;
+}
+section nav{
+  height: 7.5vh;
+  background-color: #34ad54;
+}
+section nav ul{
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-left:41.5vw;
+}
+section nav ul li{
+  margin-top: 2.5vh;
+  margin-right: 3.5vw;
+}
+.aktif{
+  background-color: #ff9933;
+  color: #ffff;
+  transition: 0.5s linear;
+}
+.aktif:hover{
+  color: #34ad54;
+}
+.resim{
+  margin-top: 0;
+  background-image: url(resimler/carousel-1.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100vw;
+  color: #ffff;
+  text-align: left;
+}
+.resim span {
+  font-size: 3em;
+  font-weight: lighter;
+  margin-top: 0;  
+}
+.resim p{
+  position: relative;
+  top: 25vh;
+  margin:0 30vw;
+}
+.resim button{
+  background-color: #ff9933;
+  color: #ffff;
+  padding: 2vh 2.8vw;
+  font-size: 0.9375em;
+  border: 0;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+  transition: 0.5s linear;
+}
+.resim button:hover{
+  color: #263a4f;
+  background-color: #ffff;
+}
+.resim .yesil{
+  background-color: #34ad54;
+  color: #ffff;
+  padding: 2vh 2.8vw;
+  font-size: 0.9375em;
+  border: 0;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+  transition: 0.5s linear;
+}
+.resim .yesil:hover{
+  color: #263a4f;
+  background-color: #ffff;
+}
+.kutu{
+  position: relative;
+  top: -15vh;
+  display: flex;
+  color: #ffff;
+  text-align: justify;
+  font-size: 0.9375em;
+}
+.kutu span{
+  position: absolute;
+  top:6vh ;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.kutu img{
+  float: right;
+  opacity: 0.6;
+  display: none;
+  width:10vw;
+  height: 20vh;
+}
+.kutu1{
+  background-color: #34ad54 ;
+  background-image: url(resimler/vegetable.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 12vw;  
+  height: 30vh;
+  width: 38vw;  
+  padding-top:10vh ;
+  padding-left: 3vw;
+  padding-right: 2vw;
+}
+.kutu1 a{
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.5s linear;
+}
+.kutu1 a:hover{
+  color: #ff9933;
+  text-decoration: none;
+}
+.kutu2{
+  background-color: #ff9933;
+  background-image: url(resimler/fruit.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30vh;
+  width: 38vw;  
+  padding-top:10vh ;
+  padding-left: 3vw;
+  padding-right: 2vw;
+}
+.kutu2 a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s linear;
+}
+.kutu2 a:hover{
+  color: #34ad54;
+  text-decoration: none;
+}
+.bolme{
+  text-align: justify;
+  margin-left: 12vw;
+  display: flex;
+  margin-bottom:7vh;
+}
+.onemli{
+  width: 23vw;
+  height: 20vw;
+  font-size: 0.9375em;
+  margin-right: 5vw;
+}
+.onemli span{
+  font-size: 0.625em;
+  color: #34ad54;
+}
+.onemli div{
+  font-size: 3em;
+  color: #263a4f;
+  font-weight: bold;
+}
+.onemli button{
+  padding: 2vh 3vw;
+  margin-top:1.5vh;
+  background-color: #34ad54;
+  border: 0;
+  color: #ffff;
+  transition: 0.5s linear;
+}
+.onemli button:hover{
+  color: #263a4f;
+  opacity: 0.7;
+}
+.k1{
+  width: 22.7vw;
+  padding: 3vh 2vw;
+  height: 40vh;
+  text-align: center;
+  font-size: 0.625em;
+  background-color: #ffff;
+  transition: 1.0s linear;
+  margin-right: 5vh;
+  color: #263a4f;
+}
+.k1 img{
+  margin:0 3vw;
+}
+.o{
+  position: relative;
+  top: 3vh;
+}
+.a{
+  position: relative;
+  top: 1.8vh;
+}
+.k1 span{
+  font-size: 2em;
+  font-weight: bold;
+}
+.boy{
+  width: 23.6vw;
+  padding: 5vh 2vw;
+  height: 40vh;
+  margin-bottom: 2vh;
+}
+.k1:hover{
+  color: #ffff;
+  background-color: #34ad54;
+}
+.alt{
+  height: 52.5vh;
+  width: 100%;
+  background-color: #34ad54;
+  background-image: url(resimler/footer.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #ffff;
+  padding-left: 10vw;
+  display: flex;
+  padding: 3vh 10.5vw;
+}
+.bas{
+  font-weight: bold;
+  padding-top:4vh;
+  padding-bottom: 3vh;
+  font-size: 1.25em;
+  margin-right: 7vw;
+}
+.alt p{
+  margin-top:0.5vh ;
+  
+}
+br{
+  margin-top: 1vh;
+}
+.alt img{
+  float: left;
+}
+.yuvarlak2{
+  border:0;
+  background-color: #ff9933;
+  padding-left:0.7vw ;
+  margin-right: 0.5vw;
+  padding-top:1.2vh ;
+  border-radius: 50%;
+  margin-top: 2vh;
+  height: 5vh;
+  width: 2.5vw;
+  float:left;
+  transition: 0.5s linear;
+}
+.yuvarlak2:hover{
+  background-color: #263a4f;
+}
+.yuvarlak2 img{
+  width: 1.5vw;
+  height: 3vh;
+  position: relative;
+  left: -0.3vw;
+  top: -0.2vh;
+}
+.k2{
+  font-size: 0.9375em;
+  text-align: left;
+  margin-left: 1vw;
+}
+.k2 ul{
+  list-style-type: none;
+  font-size:0.9375em;
+}
+.k2 a{
+  color: #ffff;
+  text-decoration: none;
+}
+.k2 li{
+  margin-bottom: 2vh;
+}
+.bas2{
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.altbas{
+  font-weight: bold;
+  
+}
+.sol{
+  text-align: center;
+  width: 28vw;
+  height: 60vh;
+  position: relative;
+  top: -10.5vh;
+  background-color: #ff9933;
+  padding: 15vh 2vw;
+}
+.sol p{
+  padding-bottom: 2vh;
+}
+.sol input{
+  border: 0;
+  padding: 2.5vh 1.5vw;
+  margin-top: 2vh; 
+  transition: 1s linear;
+}
+.sol input:hover::placeholder{
+  color: #34ad54;
+}
+.sol input:hover{
+  background-color: #263a4f;
+}
+.sol button{
+  border: 0;
+  padding: 2.5vh 1vw;
+  position: relative;
+  left: -0.5vw;
+  margin-top: 2vh;
+  background-color: #34ad54;
+  color: #ffff;
+  transition: 0.5s linear;
+}
+.sol button:hover{
+  color: #263a4f;
+  background-color: #ffff;
+}
+footer{
+  text-align: center;
+  line-height: 7vh;
+  height: 7vh;
+  font-size: 0.9375em;
+  background-color: #263a4f;
+  color: #ffff;
+}
+footer a{
+  color: #ff9933;
+  text-decoration: none;
+  transition: 1.0s linear;
+}
+footer a:hover{
+  color: #ffff;
+  text-decoration: underline;
+}
+.resim2{
+  margin-top: 0;
+  background-image: url(resimler/carousel-2.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100vw;
+  color: #ffff;
+  text-align: left;
+}
+.resim2 p{
+  position: relative;
+  top: 25vh;
+  font-size: 5em;
+  margin:0 30vw;
+}
+.resim2 button{
+  background-color: #ff9933;
+  color: #ffff;
+  padding: 2vh 2.8vw;
+  font-size: 0.9375em;
+  border: 0;
+  position: relative;
+  top: 25vh;
+  left: 30vw;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+  transition: 0.5s linear;
+}
+.resim2 button:hover{
+  color: #263a4f;
+  background-color: #ffff;
+}
+.resim2 .yesil{
+  background-color: #34ad54;
+  color: #ffff;
+  padding: 2vh 2.8vw;
+  font-size: 0.9375em;
+  border: 0;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+  transition: 0.5s linear;
+}
+.resim2 .yesil:hover{
+  color: #263a4f;
+  background-color: #ffff;
+}
+.v{
+  margin-left: 15vw;
+  font-size: 0.900em;
+  margin-right: 13vw;
+  text-align: justify;
+}
+.v span{
+  font-size: 0.7250em;
+  color: #34ad54;
+  font-weight: bold;
+}
+.v .ba{
+  font-weight: bold;
+  color: #263a4f;
+  font-size: 2.9em;
+}
+.v p{
+  margin-top: 5vh;
+}
+.v img{
+  float: left;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 0.2vh;
+  position: relative;
+  bottom: -0.5vh;
+  border: 3px solid #34ad54;
+  margin-right: 2vw;
+}
+.kutu3{
+  display: flex;
+}
+.k3{
+  width: 15vw;
+  height: 15vh;
+  text-align: justify;
+  margin-right: 3vw;
+  margin-top: 3vw;
+  
+}
+.k3 p{
+  font-size: 1em;
+  margin-top: 3vh;
+}
+.k3 span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.k4{
+  width: 15vw;
+  height: 15vh;
+  text-align: justify;
+  margin-top: 3vw;
+  
+}
+.k4 p{
+  font-size: 1em;
+  margin-top: 3vh;
+}
+.k4 span{
+  font-weight: bold;
+  margin-bottom: 5vh;
+  font-size: 1.2em;
+}
+.k4 img{
+  margin-left: 2vw;
+}
+.form{
+  width: 34vw;
+  height: 15vw;
+  background-color: #34ad54;
+  margin-left: 25vw;
+  float: left;
+  margin-bottom: 10vh;
+}
+.iki{
+  display:flex ;
+  margin-left: 2vw;
+  padding-top: 3vh;
+}
+.form .kisa{
+  padding: 1.5vh 0;
+  margin-right: 0.5vw;
+  padding-left: 2.15vw;
+  padding-right: 0;
+  border: 0;
+  transition: 0.5s linear;
+}
+.kisa:hover::placeholder{
+  color: #34ad54;
+}
+.kisa:hover{
+  background-color: #263a4f;
+}
+.uzun{
+  padding: 1.5vh 15.2vw;
+  margin-top:1vh ;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  border: 0;
+  transition: 0.5s linear;
+}
+.uzun:hover::placeholder{
+  color: #34ad54;
+}
+.uzun:hover{
+  background-color: #263a4f;
+}
+.mesaj{
+  padding: 2vh 15.2vw;
+  margin-top:1vh ;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  border: 0;
+  transition: 0.5s linear;
+}
+.mesaj:hover::placeholder{
+  color: #34ad54;
+}
+.mesaj:hover{
+  background-color: #263a4f;
+}
+.form button{
+  margin-left: 2vw;
+  background-color: #ff9933;
+  color: #fff;
+  font-size: 0.7000em;
+  border: 0;
+  margin-top: 1.5vh;
+  padding: 1.5vh 12.2vw;
+  transition: 0.5s linear;
+}
+.form button:hover{
+  color: #34ad54;
+  background-color: #263a4f;
+}
+.get{
+  float: right;
+  width: 20vw;
+  height: 15vw;
+  background-color: #ff9933;
+  margin-right: 21vw;
+  margin-bottom: 10vh;
+  padding-left: 2vw;
+  padding-top: 2.5vh;
+  color: #fff;
+}
+.c span{
+  text-align: center;
+  font-size: 0.35em;
+  font-weight: bold;
+  color: #34ad54;
+}
+.kayit .c{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #263a4f;
+  margin-bottom: 2vh;
+}
+.get span{
+  font-size: 0.975em;
+  font-weight: bold;
+}
+.get p{
+  margin-top: 2vh;
+}
+.get img{
+  width: 3vw;
+  height: 5vh;
+  float: left;
+  margin-top: 2vh;
+}
